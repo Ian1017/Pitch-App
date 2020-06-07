@@ -1,5 +1,5 @@
 from flask import Flask
-from flask-bootstrap import flask_bootstrap
+from flask_bootstrap import flask_bootstrap
 from flask_sqlalchemy import SQLAlchemy
 from config import config_options
 
