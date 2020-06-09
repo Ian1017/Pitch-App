@@ -85,12 +85,12 @@ def category(id):
     '''
     function that returns pitches based on the entered category id
     '''
-    category = PitchCategory.query.get(id)
+    category = Pitch.Category.query.get(id)
 
     if category is None:
         abort(404)
 
-    pitches_in_category = Pitches.get_pitch(id)
+    pitches_in_category = Pitch.get_pitch(id)
     return render_template('category.html' ,category= category, pitches= pitches_in_category)
 
 @main.route('/pitch/comments/new/<int:id>',methods = ['GET','POST'])

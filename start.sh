@@ -1,4 +1,4 @@
-export SECRET_KEY=baby
+export SECRET_KEY
 export MAIL_USERNAME=mogadem@gmail.com
 export MAIL_PASSWORD=jonamugo
 
